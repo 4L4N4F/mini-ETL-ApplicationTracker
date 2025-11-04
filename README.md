@@ -20,14 +20,6 @@ This project follows a lightweight ETL (Extract, Transform, Load) pipeline built
 | **Load** | A Google Apps Script updates the dataset automatically without overwriting existing records. | Google Apps Script |
 | **Visualize** | The clean dataset is connected to a Looker Studio dashboard for interactive analysis. | Looker Studio |
 
-### 🧭 ETL Pipeline Overview
-
-```mermaid
-graph LR
-    A[Google Form 📥<br>Data Collection] --> B[Google Sheets 🧹<br>Transformation & Storage]
-    B --> C[Google Apps Script ⚙️<br>Automation & Updates]
-    C --> D[Looker Studio 📊<br>Visualization & Analysis]
-
 
 ## 🛠️ Tech Stack
 
@@ -39,7 +31,7 @@ graph LR
 
 ## 🧩 Data Source & Structure
 
-The dataset was built from **real job postings collected on the Gupy platform**, anonymized to remove all personally identifiable or company-specific data.  
+The dataset was built from real job postings anonymized to remove all personally identifiable or company-specific data.  
 
 It is organized in the `/data` folder:  
 - `sample/` — example CSVs used for testing and prototyping  
@@ -50,14 +42,8 @@ Updates are automated through a Google Apps Script (`/scripts/update_dataset.gs`
 
 ## 📊 Dashboard & Analysis
 
-A **Looker Studio dashboard** was developed to visualize and analyze patterns in the data, focusing on:  
-- skill frequency and co-occurrence  
-- platform trends and job categories  
-- time-based posting dynamics  
-
-The dashboard connects directly to the Google Sheets dataset through an automated update pipeline.
+A Looker Studio dashboard was developed to visualize and analyze patterns in the data. The dashboard connects directly to the Google Sheets dataset through an automated update pipeline.
 
 
 ## 🪜 Next Steps
-
 - Add AI-based parsing of job descriptions
