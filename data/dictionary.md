@@ -1,6 +1,5 @@
 This document describes the fields included in the sample dataset. All data has been anonymized from real job postings collected during the project.
 
-|--------|------|----------|-------------|
 | field             | type              | example                                          | description                                              |
 | ----------------- | ----------------- | ------------------------------------------------ | -------------------------------------------------------- |
 | timestamp         | datetime          | 2025-10-18                                       | date and time when the form was submitted                |
