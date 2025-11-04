@@ -47,3 +47,7 @@ A Looker Studio dashboard was developed to visualize and analyze patterns in the
 
 ## 🪜 Next Steps
 - Add AI-based parsing of job descriptions
+
+
+## Status
+🟠 Work in Progress (WIP)
