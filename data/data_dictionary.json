@@ -1,0 +1,110 @@
+[
+    {
+        "field": "timestamp",
+        "type": "datetime",
+        "example": "2025-10-18",
+        "description": "date and time when the form was submitted"
+    },
+    {
+        "field": "empresa",
+        "type": "string",
+        "example": "google",
+        "description": "company name"
+    },
+    {
+        "field": "local_empresa",
+        "type": "string",
+        "example": "porto alegre",
+        "description": "city (and optionally state) where the company is located"
+    },
+    {
+        "field": "cargo",
+        "type": "string",
+        "example": "analista de dados",
+        "description": "job title applied for"
+    },
+    {
+        "field": "senioridade",
+        "type": "categorical",
+        "example": "pleno",
+        "description": "job level or seniority mentioned in the job posting"
+    },
+    {
+        "field": "plataforma",
+        "type": "categorical",
+        "example": "gupy",
+        "description": "recruitment platform"
+    },
+    {
+        "field": "contrato",
+        "type": "categorical",
+        "example": "clt",
+        "description": "type of employment contract"
+    },
+    {
+        "field": "remuneracao_reais",
+        "type": "numeric or string",
+        "example": "5000",
+        "description": "reported or estimated salary in brl"
+    },
+    {
+        "field": "descricao",
+        "type": "text",
+        "example": "estamos à procura de uma pessoa para...",
+        "description": "short job description or summary"
+    },
+    {
+        "field": "skills",
+        "type": "list",
+        "example": "sql, power bi, python",
+        "description": "key skills or technologies required"
+    },
+    {
+        "field": "data_post",
+        "type": "date",
+        "example": "2025-10-10",
+        "description": "date when the job was posted"
+    },
+    {
+        "field": "observacoes",
+        "type": "text",
+        "example": "contacted recruiter on linkedin",
+        "description": "personal notes or additional observations"
+    },
+    {
+        "field": "application",
+        "type": "date",
+        "example": "2025-10-13",
+        "description": "date of application submission"
+    },
+    {
+        "field": "responsabilidades",
+        "type": "text",
+        "example": "responsável por coleta e modelagem de dados...",
+        "description": "responsibilities listed in the job description"
+    },
+    {
+        "field": "qualificacoes",
+        "type": "text",
+        "example": "superior completo em ciência de dados...",
+        "description": "qualifications or educational requirements"
+    },
+    {
+        "field": "inglês",
+        "type": "categorical",
+        "example": "avancado",
+        "description": "english level required or mentioned"
+    },
+    {
+        "field": "diferenciais",
+        "type": "text",
+        "example": "conhecimento em spark/pyspark...",
+        "description": "optional or preferred qualifications"
+    },
+    {
+        "field": "status",
+        "type": "categorical",
+        "example": "pendente",
+        "description": "application status (e.g., applied, interview, rejected)"
+    }
+]
