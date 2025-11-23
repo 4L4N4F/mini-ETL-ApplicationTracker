@@ -1,7 +1,7 @@
 A personal data project designed to track and analyze job applications. This project shows how everyday tools can be combined into a functional data pipeline (ETL) — proving that automation and analytics can be both simple and impactful.  
 
 
-## 🎯 Goals
+## Goals
 
 - Transform my job-hunting process into a structured, visual dataset  
 - Track my job-search performance  
@@ -9,27 +9,26 @@ A personal data project designed to track and analyze job applications. This pro
 - Use data to guide my job-hunting strategy  
 
 
-## ⚙️ ETL Workflow
-
-This project follows a lightweight ETL (Extract, Transform, Load) pipeline built entirely with no-code and low-code tools:
+## Updated ETL Workflow
+This project follows a lightweight ETL (Extract, Transform, Load) pipeline built entirely with no-code and low-code tools, now optimized for stability and real-time updates.
+Recent update: visualization moved from Looker Studio to a dashboard built directly inside Google Sheets to avoid connector delays and data inconsistencies.
 
 | Stage | Description | Tool |
 |--------|-------------|------|
 | **Extract** | Job application data is collected via a Google Form. | Google Forms |
 | **Transform** | A Google Sheets workflow cleans, structures, and enriches the data using formulas and custom logic. | Google Sheets |
 | **Load** | A Google Apps Script updates the dataset automatically without overwriting existing records. | Google Apps Script |
-| **Visualize** | The clean dataset is connected to a Looker Studio dashboard for interactive analysis. | Looker Studio |
+| **Visualize** | A fully interactive dashboard is now being built directly inside Google Sheets, ensuring instant updates and greater reliability. | Google Sheets (Charts, Pivot Tables, Slicers) |
 
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Google Forms** — data collection  
-- **Google Sheets** — data storage and cleaning  
-- **Google Apps Script** — automation  
-- **Looker Studio** — data visualization  
+- **Google Sheets** — data storage, cleaning, transformation and, dashboard
+- **Google Apps Script** — automatated updates
+- 
 
-
-## 🧩 Data Source & Structure
+## Data Source & Structure
 
 The dataset was built from real job postings anonymized to remove all personally identifiable or company-specific data. It is organized in the `/data` folder:  
 - `sample/` — example CSVs used for testing and prototyping  
@@ -38,10 +37,10 @@ The dataset was built from real job postings anonymized to remove all personally
 Updates are automated through a Google Apps Script (`/scripts/update_dataset.gs`), which appends new records instead of overwriting existing ones.
 
 
-## 📊 Dashboard & Analysis
+## Dashboard & Analysis
 
-A [Looker Studio dashboard](https://lookerstudio.google.com/u/0/reporting/615c97a0-c588-4914-9b2e-1f7a24c57422/page/p_oaa3vt8rxd) was developed to visualize and analyze patterns in the data. The dashboard connects directly to the Google Sheets dataset through an automated update pipeline.
+The previous Looker Studio dashboard has been replaced by an in-Sheets dashboard (under construction), which offers zero delay, no connector instability, and real-time updates as soon as new form entries arrive. This change significantly improves reliability and overall workflow performance.
 
 
-## 🪜 Next Steps
+## Next Steps
 - Add AI-based parsing of job descriptions
